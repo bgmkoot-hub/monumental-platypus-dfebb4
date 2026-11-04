@@ -1,33 +1,27 @@
-# Durfboot
+# Durfboot wordt Waterbus
 
-Zelfstandige statische projectsite voor Durfboot: varende werkplaats, ontmoetingsplek en filmset binnen de werktafel van TimeDesk en de maakpraktijk van Bennemans.
+Frameworkloze statische projectsite, met de goedgekeurde petrolgroene Waterbus-restyling, originele hero met pinguïn en interieurinleg en het aangepaste Waterbus-logo. Durfboot is een persoonlijk maakproject binnen TimeDesk / Bennemans.
+
+## Actuele ontwikkelbasis
+
+De aanvankelijk aanwezige broncode bevatte de oude vormgeving. De goedgekeurde versie is vóór de reserveringsuitbreiding teruggehaald uit de vaste deploy https://6aeb1b8d682944fa6af15bf8--monumental-platypus-dfebb4.netlify.app. `content/waterbus-basis.json` legt de herkomst en SHA-256-controles van die basis vast. Door Netlify geïnjecteerde preview-scripts en previewmetadata zijn niet overgenomen.
+
+Deze wijziging bevat de volledige herstelde basis plus de reserveringspagina en herstelde contactgegevens. Beoordeel deze samen in één deploy-preview. Voeg daarna de volledige wijzigingsbranch samen naar `main`, inclusief HTML, CSS, JavaScript, afbeeldingen, buildscript en documentatie. Gebruik bij conflicten niet de oude homepage van `main`: behoud de Waterbus-versie en controleer de hero, het logo en alle secties. Begin toekomstige wijzigingen vanuit de bijgewerkte `main`.
+
+Er is in deze wijziging geen productiepublicatie uitgevoerd. Het samenvoegen naar `main` kan de bestaande automatische productie-deploy starten; doe dit pas na goedkeuring van de preview.
+
+## Bestanden
+
+- `index.html`: vernieuwde homepage en directe contactlinks.
+- `reserveren/index.html`: aanvraagpagina op `/reserveren`.
+- `reserveren/reserveren.js`: valideert het formulier en opent een lokaal samengesteld mail- of WhatsApp-bericht; de bezoeker verstuurt dat zelf.
+- `styles.css`: gedeelde huisstijl en responsive navigatie/formulier.
+- `site.js`: uitklapmenu, Escape-bediening en jaartal.
+- `images/durfboot-hero*.webp` en `images/waterbus-logo.png`: goedgekeurde beelden.
+- `scripts/build.mjs`: kopieert de statische site, inclusief reserveringspagina, naar `dist/`.
 
 ## Lokaal werken
 
-Vereist Node.js 22 of nieuwer. Voer `npm install` en daarna `npm run dev` uit. Maak een productieversie met `npm run build`; de uitvoer staat in `dist/`.
+Node.js 22 of nieuwer. Installeer met `npm install`. Gebruik `netlify dev --port 8889` voor de lokale site. Netlify voert de build automatisch uit volgens `netlify.toml`.
 
-## Inhoud aanpassen
-
-- Alle paginatekst staat semantisch gegroepeerd in `index.html`.
-- Kleuren, typografie en responsive vormgeving staan in `styles.css`.
-- De tijdelijke beelden staan in `images/`. Vervang ze door geoptimaliseerde projectfoto's en pas bron, afmetingen en alt-teksten in `index.html` aan.
-- De voorbereidende logboekdata staat in `content/logboek.json`. Nieuwe items krijgen een uniek volgnummer, status en titel. Tot er contentgeneratie is, wordt dezelfde kaart ook in `index.html` toegevoegd. Er is bewust geen CMS.
-
-## Netlify
-
-Netlify leest `netlify.toml`, voert `npm run build` uit en publiceert `dist/`. Er zijn geen omgevingsvariabelen, functies, database, cookies of tracking nodig. De enige externe aanvraag is de lettertype-download van Google Fonts.
-
-Na de eerste publicatie moet `durfboot.timedesk.info` in Netlify handmatig als custom domain worden toegevoegd. Verbind daarna de DNS volgens de instructies van Netlify. Deze repository wijzigt geen DNS.
-
-## Nog aan te leveren
-
-- Definitieve Durfboot-fotografie voor het hero- en detailbeeld.
-- Bevestigde technische gegevens, alleen wanneer die openbaar mogen worden.
-- Een direct contactadres of specifieke contactpagina. Tot die tijd verwijst de knop naar Bennemans.
-- Eerste echte logboekberichten.
-
-## Vervolgpunten
-
-- Koppel echte logboekdetailpagina's zodra de eerste berichten beschikbaar zijn.
-- Overweeg lettertypen later lokaal mee te leveren om ook die externe aanvraag te verwijderen.
-- Controleer de uiteindelijke projectfoto's op uitsnede, bestandsgrootte en alt-tekst.
+Er zijn geen formulierinzendingen, accounts, database, betalingen of beschikbaarheidskalender. Formuliergegevens worden uitsluitend gebruikt om een berichtlink in de browser te maken. Er wordt geen ontvangst- of reserveringsbevestiging getoond. Contact: bgmkoot@gmail.com en 06 1076 1118.

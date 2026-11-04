@@ -1,0 +1,13 @@
+{
+  "source": "https://6aeb1b8d682944fa6af15bf8--monumental-platypus-dfebb4.netlify.app",
+  "description": "Goedgekeurde Waterbus-restyling, hersteld v\u00f3\u00f3r toevoeging reserveringspagina. Platforminjecties verwijderd.",
+  "sha256": {
+    "index.html": "a08f68957c164fc0a89fb931cdf2f4548a30e906664ea063bb4b10dcf909f9eb",
+    "styles.css": "ff666742b9fe3007f2e311ac89af29b2cd7d92516547267c84cf5d8e41fd16c9",
+    "site.js": "e72befb25a8cf927fe0926194d229c173e26c8d524651e4799c7fc185c1b2e2a",
+    "favicon.svg": "8f01cae050e4bdb91b13c58e5b5993bbddffb569081ce4a1f0c57b7a87a54475",
+    "images/durfboot-hero.webp": "41527bf2441bfcebf6bca3b40fda5ebbac40aa5da5246a20387c38cc3304ccd9",
+    "images/durfboot-hero-small.webp": "9951b2994dd34abd502ef77f88875060442c6a5d670f31212b0bbdbb3892e92c",
+    "images/waterbus-logo.png": "ff5bb3266b6298937414e22ef883b69d79a31f996d1b4412aabc47c4dda99d69"
+  }
+}
