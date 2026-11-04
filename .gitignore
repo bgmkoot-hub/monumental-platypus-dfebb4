@@ -1,0 +1,6 @@
+# Local Netlify folder
+.netlify
+
+# Local dependencies and generated output
+node_modules/
+dist/
